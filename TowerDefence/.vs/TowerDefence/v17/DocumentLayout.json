@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\nov\u00E1 slo\u017Eka\\towerdefence - verze 3\\towerdefence\\assets\\scripts\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\assets\\scripts\\objectclickspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectclickspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\assets\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\nov\u00E1 slo\u017Eka\\towerdefence - verze 3\\towerdefence\\assets\\scripts\\vomule manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vomule manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\assets\\scripts\\wavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\wavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\assets\\scripts\\canvasonplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\canvasonplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\assets\\scripts\\volume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\volume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\assets\\scripts\\managerofscenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managerofscenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\nov\u00E1 slo\u017Eka\\towerdefence - verze 3\\towerdefence\\assets\\scripts\\golds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\golds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\assets\\scripts\\basehp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28866EB0-7993-C171-348D-8535A8E3480D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\basehp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Turret.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\Turret.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Turret.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\Turret.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Turret.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAuwCAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T08:12:35.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WaveManager.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\WaveManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WaveManager.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\WaveManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WaveManager.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAkwFgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T07:18:40.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ObjectClickSpawn.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\ObjectClickSpawn.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectClickSpawn.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\ObjectClickSpawn.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ObjectClickSpawn.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAYwIQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T07:18:40.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnemyMovement.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\EnemyMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyMovement.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\EnemyMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyMovement.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAawDgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T07:18:40.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CanvasOnPlace.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\CanvasOnPlace.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CanvasOnPlace.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\CanvasOnPlace.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CanvasOnPlace.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwB4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T09:32:38.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\Bullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\Bullet.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Bullet.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwCYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T07:26:38.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Vomule Manager.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\Vomule Manager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Vomule Manager.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\Vomule Manager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Vomule Manager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T10:52:22.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Volume.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\Volume.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Volume.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\Volume.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Volume.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T10:22:39.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ManagerOfScenes.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\ManagerOfScenes.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ManagerOfScenes.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\ManagerOfScenes.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ManagerOfScenes.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAzwB4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T07:18:40.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Golds.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\Golds.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Golds.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\Golds.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Golds.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T08:11:45.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BaseHP.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\BaseHP.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BaseHP.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Nov\u00E1 slo\u017Eka\\TowerDefence - verze 3\\TowerDefence\\Assets\\Scripts\\BaseHP.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BaseHP.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwC4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T07:18:40.914Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
