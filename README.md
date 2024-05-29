@@ -8,6 +8,8 @@ Made in Unity, Scripts made in C#
 Unity version used: 2022.3.29f1
 
 
+
+
 *The Library folder is missing!*
 
 *To run the game (in Unity environment) just import the game into Unity Hub and Unity will then download the missing Library folder*
@@ -18,7 +20,9 @@ Tento projekt obsahuje strategickou hru Tower defense
 
 Vytvořeno v Unity, scripty vytvořeny v C#
 
-Verze Unity použita: Unity 2022.3.29f1
+Verze Unity použita: 2022.3.29f1
+
+
 
 
 *Chybí složka Library!*
