@@ -7,12 +7,12 @@ public class Turret : MonoBehaviour
 {
     private Transform target;
     private VomuleManager volume;
+    private float fireCountdown = 0f;
 
     [HeaderAttribute("shooting")]
     public string tag = "Enemy";
     public float range = 15f;
     public float fireRate = 1f;
-    private float fireCountdown = 0f;
     public GameObject bulletPrefab;
     public Transform firePoint;
 

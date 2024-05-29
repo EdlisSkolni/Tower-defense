@@ -5,17 +5,17 @@ using UnityEngine;
 public class VomuleManager : MonoBehaviour
 {
     [HeaderAttribute("Source")]
-    [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource effectsSource;
+    public AudioSource musicSource;
+    public AudioSource effectsSource;
 
     [HeaderAttribute("Sounds")]
-    public AudioClip background; //here in start
-    public AudioClip hitFromNormalAndDMG; //implemented
-    public AudioClip hitFromFreeze; //implemented
-    public AudioClip boom; //implemented
-    public AudioClip enemyDed; //implemented
-    public AudioClip enemyHitStructures; //implemented
-    public AudioClip turretHit; //implemented
+    public AudioClip background;
+    public AudioClip hitFromNormalAndDMG;
+    public AudioClip hitFromFreeze;
+    public AudioClip boom;
+    public AudioClip enemyDed;
+    public AudioClip enemyHitStructures;
+    public AudioClip turretHit;
     public static VomuleManager instance;
 
     private void Awake()

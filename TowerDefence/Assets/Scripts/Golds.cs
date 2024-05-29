@@ -7,7 +7,7 @@ public class Golds : MonoBehaviour
 {
     public int golds = 0;
     private TMP_Text goldShow;
-    public bool goldsIncome = false;
+    private bool goldsIncome = false;
     private int mineNum = 0;
     // Start is called before the first frame update
     void Start()

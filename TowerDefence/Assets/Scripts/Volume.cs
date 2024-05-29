@@ -6,9 +6,12 @@ using UnityEngine.UI;
 
 public class Volume : MonoBehaviour
 {
-    [SerializeField] private AudioMixer audioMixer;
-    [SerializeField] private Slider MusicSlider;
-    [SerializeField] private Slider soundsSlider;
+    [HeaderAttribute("Mixer")]
+    public AudioMixer audioMixer;
+
+    [HeaderAttribute("Sliders")]
+    public Slider MusicSlider;
+    public Slider soundsSlider;
 
     public void Start()
     {

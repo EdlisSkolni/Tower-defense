@@ -6,16 +6,21 @@ using UnityEngine.UI;
 
 public class WaveManager : MonoBehaviour
 {
-    public GameObject prefab;
-    public GameObject boss;
-    public float numberOfEnemies;
     private int waveNumber = 0;
     private bool help = false;
-    private GameObject[] enemiesRemaining;
     private int[] numberOfEnemiesArray = new int[20];
     private int[] numberOfBossesArray = new int[20];
     private TMP_Text text;
+
+    [HeaderAttribute("Public for other classes")]
     public bool increaseGold = false;
+    public float numberOfEnemies;
+    public GameObject[] enemiesNBossesRemaining;
+
+    [HeaderAttribute("Enemies")]
+    public GameObject enemy;
+    public GameObject boss;
+
     void Start()
     {
         setWave();
@@ -29,15 +34,15 @@ public class WaveManager : MonoBehaviour
             StartCoroutine(spawn());
             help=false;
         }
-        enemiesRemaining = GameObject.FindGameObjectsWithTag("Enemy");
-        text.text = "Enemies Remaining: " + enemiesRemaining.Length;
+        enemiesNBossesRemaining = GameObject.FindGameObjectsWithTag("Enemy");
+        text.text = "Enemies Remaining: " + enemiesNBossesRemaining.Length;
     }
 
     private IEnumerator spawn()
     {
         for(int i = 0; i < numberOfEnemiesArray[waveNumber-1]; i++)
         {
-            Instantiate(prefab,transform.position,transform.rotation);
+            Instantiate(enemy,transform.position,transform.rotation);
             yield return new WaitForSeconds(1);
         }
         if(numberOfBossesArray[waveNumber-1]!=0)
@@ -64,7 +69,7 @@ public class WaveManager : MonoBehaviour
         while (true)
         {
         yield return new WaitForSeconds(2);
-            if (enemiesRemaining.Length <= 0)
+            if (enemiesNBossesRemaining.Length <= 0)
             {
                 but.gameObject.SetActive(true);
                 increaseGold=false; //<================golds

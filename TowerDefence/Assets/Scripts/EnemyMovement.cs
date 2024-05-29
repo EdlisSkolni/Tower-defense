@@ -6,24 +6,28 @@ using UnityEngine.UI;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public GameObject target;
-    private NavMeshAgent agent;
-    public Slider slider;
-    private float maxHP = 100;
-    public float currentHP;
     private bool touchingBase = false;
-    public float damage = 5;
-    public Camera camera;
     private GameObject[] bariccades = { };
-    public float startSpeed = 2;
+    private NavMeshAgent agent;
+    private float maxHP = 100;
     private float speed;
-    private NavMeshAgent nav;
+    private bool cooldown = false;
+
+    [HeaderAttribute("Basic settings")]
+    public GameObject target;
+    public Slider slider;
+    public Camera camera;
     public GameObject partical;
     public VomuleManager vomuleManager;
-    //boss
+
+    [HeaderAttribute("Attributes")]
+    public float damage = 5;
+    public float currentHP;
+    public float startSpeed = 2;
+
+    [HeaderAttribute("Boss")]
     public bool isBoss = false;
     public GameObject enemyToSpawn;
-    private bool cooldown = false;
     public int cooldownInt = 10;
     void Start()
     {
@@ -45,8 +49,7 @@ public class EnemyMovement : MonoBehaviour
             maxHP *= 10;
             StartCoroutine(bossAbility());
         }
-        nav = GetComponent<NavMeshAgent>();
-        nav.speed = speed;
+        agent.speed = speed;
         InvokeRepeating("attackBariccade", 0f, 0.5f);
         InvokeRepeating("speedInNav",0f,1f);
     }
@@ -61,7 +64,7 @@ public class EnemyMovement : MonoBehaviour
 
     public void speedInNav()
     {
-        nav.speed = speed;
+        agent.speed = speed;
     }
 
     //boss
@@ -126,7 +129,7 @@ public class EnemyMovement : MonoBehaviour
         slider.value = damage;
         if (currentHP <= 0)
         {//ded
-            GameObject parti = (GameObject)Instantiate(partical, transform.position, transform.rotation);
+            GameObject parti = Instantiate(partical, transform.position, transform.rotation);
             vomuleManager.playEffect(vomuleManager.enemyDed);
             Destroy(parti, 2f);
             Destroy(gameObject);

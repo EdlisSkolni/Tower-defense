@@ -10,25 +10,14 @@ using UnityEngine.UI;
 
 public class ObjectClickSpawn : MonoBehaviour
 {
-    public GameObject prefabTT1;
-    public GameObject prefabTT2;
-    public GameObject prefabTT3;
-    public GameObject prefabTT4;
-    public GameObject prefabOR1;
-    public GameObject prefabOR2;
     private bool correctLayer = false;
     private bool correctBaricade = false;
     private bool correctMine = false;
-    public LayerMask ableToPlace;
-    public LayerMask ableToMine;
-    public LayerMask ableToBlock;
     private int choice = 0;
-    public int numMine = 0;
     private int[] price = {25,125,225,500,750,1000};
     private int golds = 0;
     private bool enough = false;
-    public bool cheats = false;
-    public TMP_Text textNotEnough;
+    private TMP_Text textNotEnough;
     /*
         choice = -1.. deleting - return 100%
         choice = 1.. turret 1 - costs 25
@@ -41,6 +30,23 @@ public class ObjectClickSpawn : MonoBehaviour
     private GameObject game;
     private GameObject spawn;
     private GameObject mainCan;
+
+    [HeaderAttribute("Public for other classes")]
+    public int numMine = 0;
+    public bool cheats = false;
+
+    [HeaderAttribute("Layers")]
+    public LayerMask ableToPlace;
+    public LayerMask ableToMine;
+    public LayerMask ableToBlock;
+
+    [HeaderAttribute("Models")]
+    public GameObject prefabTT1;
+    public GameObject prefabTT2;
+    public GameObject prefabTT3;
+    public GameObject prefabTT4;
+    public GameObject prefabOR1;
+    public GameObject prefabOR2;
 
     private void Start()
     {

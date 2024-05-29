@@ -52,6 +52,11 @@ public class BaseHP : MonoBehaviour
         }
     }
 
+    public void setHP(float hps)
+    {
+        currentHP = hps;
+    }
+
     public void gameLost()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
