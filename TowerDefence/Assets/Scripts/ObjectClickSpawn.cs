@@ -30,10 +30,11 @@ public class ObjectClickSpawn : MonoBehaviour
     private GameObject game;
     private GameObject spawn;
     private GameObject mainCan;
+    private Cheats cheatOnOff;
+    private bool cheats = false;
 
     [HeaderAttribute("Public for other classes")]
     public int numMine = 0;
-    public bool cheats = false;
 
     [HeaderAttribute("Layers")]
     public LayerMask ableToPlace;
@@ -53,6 +54,8 @@ public class ObjectClickSpawn : MonoBehaviour
         game = GameObject.FindWithTag("Canvas");
         spawn = GameObject.FindWithTag("Spawn");
         mainCan = GameObject.FindWithTag("MainMain");
+        cheatOnOff = GameObject.FindWithTag("Can menu").GetComponent<Cheats>();
+        cheats = cheatOnOff.On_Off;
     }
     void Update()
     {

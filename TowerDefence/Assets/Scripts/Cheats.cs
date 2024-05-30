@@ -12,6 +12,8 @@ public class Cheats : MonoBehaviour
     private ManagerOfScenes manager;
     private BaseHP hp;
     private bool baseNotDie = false;
+    private Bullet bullet;
+    private bool anyBullet = false;
     [HeaderAttribute("On or Off")]
     public bool On_Off = false;
 
@@ -25,6 +27,19 @@ public class Cheats : MonoBehaviour
         manager = GameObject.FindWithTag(m).GetComponent<ManagerOfScenes>();
         On_Off = manager.cheats;
         hp = GameObject.FindWithTag("Target").GetComponent<BaseHP>();
+    }
+
+    private void Update()
+    {
+        bullet = GameObject.FindWithTag("").GetComponent<Bullet>();
+        if(bullet != null)
+        {
+            anyBullet = true;
+        }
+        else
+        {
+            anyBullet = false;
+        }
     }
 
     public void killAllExisting()
@@ -63,6 +78,11 @@ public class Cheats : MonoBehaviour
 
     public void turretDMGPlus100Percent()
     {
-        //zvednout DMG pomocí Bullet class
+        if (anyBullet)
+        {
+            bullet.damage = bullet.damage * 100;
+        }
     }
+
+
 }
