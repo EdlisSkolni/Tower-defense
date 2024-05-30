@@ -20,8 +20,9 @@ public class Bullet : MonoBehaviour
     public GameObject MoreDamage;
     public GameObject Boom;
 
-    public void Seek(Transform targetMed, int turretType)
+    public void Seek(Transform targetMed, int turretType, int DMGMultiplayer)
     {
+        damage *= DMGMultiplayer;
         target = targetMed;
         enemy = targetMed.GetComponent<EnemyMovement>();
         if(turretType == 3)

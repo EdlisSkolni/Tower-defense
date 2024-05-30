@@ -17,7 +17,6 @@ public class ObjectClickSpawn : MonoBehaviour
     private int[] price = {25,125,225,500,750,1000};
     private int golds = 0;
     private bool enough = false;
-    private TMP_Text textNotEnough;
     /*
         choice = -1.. deleting - return 100%
         choice = 1.. turret 1 - costs 25
@@ -35,6 +34,9 @@ public class ObjectClickSpawn : MonoBehaviour
 
     [HeaderAttribute("Public for other classes")]
     public int numMine = 0;
+
+    [HeaderAttribute("Not enough golds")]
+    public TMP_Text textNotEnough;
 
     [HeaderAttribute("Layers")]
     public LayerMask ableToPlace;
@@ -102,7 +104,10 @@ public class ObjectClickSpawn : MonoBehaviour
     public void placeTurret()
     {
         GameObject[] objects = { prefabTT1, prefabTT2, prefabTT3, prefabTT4};
-        enoughGolds(choice-1);
+        if (choice != 0)
+        {
+            enoughGolds(choice-1);
+        }
         if (choice != 0 && enough)
         {
             place(objects[choice - 1]);
@@ -114,7 +119,10 @@ public class ObjectClickSpawn : MonoBehaviour
 
     public void placeMine()
     {
-        enoughGolds(5);
+        if (choice != 0)
+        {
+            enoughGolds(5);
+        }
         if (choice!=0 && choice == 6 && enough)
         {
             place(prefabOR2);
@@ -126,7 +134,10 @@ public class ObjectClickSpawn : MonoBehaviour
 
     public void placeBarricade()
     {
-        enoughGolds(4);
+        if (choice != 0)
+        {
+            enoughGolds(4);
+        }
         if (choice != 0 && choice==5 && enough)
         {
             place(prefabOR1);

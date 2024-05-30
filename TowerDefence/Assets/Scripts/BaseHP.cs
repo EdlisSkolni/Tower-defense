@@ -39,7 +39,7 @@ public class BaseHP : MonoBehaviour
         }
     }
 
-    public void damageBase(float damage)
+    public void damageBase(int damage)
     {
         currentHP -= damage;
         if(currentHP <= 0)
@@ -52,7 +52,7 @@ public class BaseHP : MonoBehaviour
         }
     }
 
-    public void setHP(float hps)
+    public void setHP(int hps)
     {
         currentHP = hps;
     }

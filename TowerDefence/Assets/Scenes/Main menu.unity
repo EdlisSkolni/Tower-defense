@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 77899136}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Can menu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -298,6 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc0042bb05be344883a2909c6e55da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cheats: 0
 --- !u!1 &227103661
 GameObject:
   m_ObjectHideFlags: 0

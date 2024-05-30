@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -73,7 +74,7 @@ public class EnemyMovement : MonoBehaviour
         while (true)
         {
             transform.gameObject.SetActive(true);
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(3);
             if (cooldownInt >= 10)
             {
                 cooldown = true;
@@ -82,7 +83,7 @@ public class EnemyMovement : MonoBehaviour
             {
                 cooldown = false;
             }
-            int random = Random.Range(0, 10);
+            int random = UnityEngine.Random.Range(0, 10);
             Debug.Log(random);
             if (random == 5 && cooldown)
             {
@@ -159,10 +160,11 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        int dmg = Convert.ToInt32(damage);
         if ((other.gameObject.CompareTag("Target") || other.gameObject.CompareTag("Bariccade")) && touchingBase)
         {
             vomuleManager.playEffect(vomuleManager.enemyHitStructures);
-            other.GetComponent<BaseHP>().damageBase(damage);
+            other.GetComponent<BaseHP>().damageBase(dmg);
         }
 
     }

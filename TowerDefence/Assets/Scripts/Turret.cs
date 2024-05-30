@@ -9,6 +9,9 @@ public class Turret : MonoBehaviour
     private VomuleManager volume;
     private float fireCountdown = 0f;
 
+    [HeaderAttribute("Public for other classes")]
+    public int multi = 1;
+
     [HeaderAttribute("shooting")]
     public string tag = "Enemy";
     public float range = 15f;
@@ -69,7 +72,7 @@ public class Turret : MonoBehaviour
         Bullet bullet = bulletGo.GetComponent<Bullet>();
         if (bullet != null)
         {
-            bullet.Seek(target, type());
+            bullet.Seek(target, type(), multi);
         }
         volume.playEffect(volume.turretHit);
     }

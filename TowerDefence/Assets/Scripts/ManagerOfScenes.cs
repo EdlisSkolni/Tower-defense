@@ -30,7 +30,7 @@ public class ManagerOfScenes : MonoBehaviour
             {
                 cheats = !cheats;
                 cheatPart = 0;
-                cheatsClass.On_Off = cheats;               
+                cheatsClass.On_Off = cheats;
             }
             if (Input.anyKeyDown && !good)
             {

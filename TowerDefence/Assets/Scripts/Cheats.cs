@@ -1,52 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Cheats : MonoBehaviour
 {
     private GameObject[] enemies;
-    private WaveManager spawner;
     private Golds gold;
-    private ObjectClickSpawn click;
     private string m = "MainMain";
     private ManagerOfScenes manager;
-    private BaseHP hp;
+    private GameObject hp;
     private bool baseNotDie = false;
-    private Bullet bullet;
-    private bool anyBullet = false;
+    private GameObject[] turretsTypeOne;
+    private GameObject[] turretsTypeTwo;
+    private GameObject[] turretsTypeThree;
+    private GameObject[] turretsTypeFour;
     [HeaderAttribute("On or Off")]
-    public bool On_Off = false;
+    public bool On_Off;
 
     private void Start()
     {
-        spawner = GameObject.FindGameObjectWithTag("Spawn").GetComponent<WaveManager>();
-        enemies = spawner.enemiesNBossesRemaining;
         gold = GameObject.FindWithTag(m).GetComponent<Golds>();
-        click = GameObject.FindWithTag(m).GetComponent<ObjectClickSpawn>();
-        click.cheats = true;
         manager = GameObject.FindWithTag(m).GetComponent<ManagerOfScenes>();
         On_Off = manager.cheats;
-        hp = GameObject.FindWithTag("Target").GetComponent<BaseHP>();
-    }
-
-    private void Update()
-    {
-        bullet = GameObject.FindWithTag("").GetComponent<Bullet>();
-        if(bullet != null)
-        {
-            anyBullet = true;
-        }
-        else
-        {
-            anyBullet = false;
-        }
+        hp = GameObject.FindWithTag("Target");
+        turretsTypeOne = GameObject.FindGameObjectsWithTag("1");
+        turretsTypeTwo = GameObject.FindGameObjectsWithTag("2");
+        turretsTypeThree = GameObject.FindGameObjectsWithTag("3");
+        turretsTypeFour = GameObject.FindGameObjectsWithTag("4");
     }
 
     public void killAllExisting()
     {
-        foreach(var enemy in enemies)
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (var enemy in enemies)
         {
-            enemy.GetComponent<EnemyMovement>().getDamage(999999999999);
+            Destroy(enemy);
         }
     }
 
@@ -55,34 +44,44 @@ public class Cheats : MonoBehaviour
         gold.plus(1000);
     }
 
-    public void invencibleBaseOn_Off()
+    public void invencibleBaseOn_Off()//nefunguje
     {
         baseNotDie = !baseNotDie;
         if (baseNotDie)
         {
             StartCoroutine(invencibleBase());
+            Debug.Log("cant die");
         }
     }
 
-    public IEnumerator invencibleBase()
+    private IEnumerator invencibleBase()
     {
         while (baseNotDie)
         {
             yield return new WaitForSeconds(1);
-            if(hp.currentHP<= 1000)
+            if(hp.GetComponent<BaseHP>().currentHP<= 1000)
             {
-                hp.setHP(1000);
+                hp.GetComponent<BaseHP>().setHP(1000);
             }
         }
     }
 
-    public void turretDMGPlus100Percent()
+    public void turretDMGPlus100Percent()//nefunguje
     {
-        if (anyBullet)
-        {
-            bullet.damage = bullet.damage * 100;
-        }
+        giveMoreDMG(0);
+        giveMoreDMG(1);
+        giveMoreDMG(2);
+        giveMoreDMG(3);
     }
 
-
+    private void giveMoreDMG(int arrayNumber)
+    {
+        GameObject[][] arrays = {turretsTypeOne, turretsTypeTwo, turretsTypeThree, turretsTypeFour};
+        
+            foreach(var turret in arrays[arrayNumber])
+            {
+                turret.GetComponent<Turret>().multi = 100;
+            }
+        
+    }
 }
