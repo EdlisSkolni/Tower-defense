@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class CanvasOnPlace : MonoBehaviour
 {
     private Camera cam;
+
+    [HeaderAttribute("Fill in")]
     public RawImage[] ímages;
     public Canvas[] canvases;
     // Start is called before the first frame update

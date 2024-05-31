@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class WaveManager : MonoBehaviour
@@ -11,11 +12,13 @@ public class WaveManager : MonoBehaviour
     private int[] numberOfEnemiesArray = new int[20];
     private int[] numberOfBossesArray = new int[20];
     private TMP_Text text;
+    private bool lastWave = false;
 
     [HeaderAttribute("Public for other classes")]
     public bool increaseGold = false;
     public float numberOfEnemies;
     public GameObject[] enemiesNBossesRemaining;
+    public bool won = false;
 
     [HeaderAttribute("Enemies")]
     public GameObject enemy;
@@ -36,6 +39,7 @@ public class WaveManager : MonoBehaviour
         }
         enemiesNBossesRemaining = GameObject.FindGameObjectsWithTag("Enemy");
         text.text = "Enemies Remaining: " + enemiesNBossesRemaining.Length;
+        checkForLastWave();
     }
 
     private IEnumerator spawn()
@@ -107,5 +111,25 @@ public class WaveManager : MonoBehaviour
         numberOfEnemiesArray[17] = 50; //wave 18
         numberOfEnemiesArray[18] = 50; //wave 19
         numberOfEnemiesArray[19] = 40; //wave 20 with boss.. 3
+    }
+
+    public void checkForLastWave()
+    {
+        if (numberOfEnemiesArray[waveNumber] == 40 && numberOfBossesArray[waveNumber] == 3)
+        {
+            lastWave = true;
+            if (enemiesNBossesRemaining.Length<=0)
+            {
+                won = true;
+            }
+            else
+            {
+                won = false;
+            }
+        }
+        else
+        {
+            lastWave = false;
+        }
     }
 }

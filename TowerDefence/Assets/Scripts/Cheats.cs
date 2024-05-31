@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -9,7 +10,7 @@ public class Cheats : MonoBehaviour
     private Golds gold;
     private string m = "MainMain";
     private ManagerOfScenes manager;
-    private GameObject hp;
+    private BaseHP hp;
     private bool baseNotDie = false;
     private GameObject[] turretsTypeOne;
     private GameObject[] turretsTypeTwo;
@@ -22,12 +23,16 @@ public class Cheats : MonoBehaviour
     {
         gold = GameObject.FindWithTag(m).GetComponent<Golds>();
         manager = GameObject.FindWithTag(m).GetComponent<ManagerOfScenes>();
+        hp = GameObject.FindWithTag("Base").transform.GetChild(0).gameObject.GetComponent<BaseHP>();
+    }
+
+    private void Update()
+    {
         On_Off = manager.cheats;
-        hp = GameObject.FindWithTag("Target");
         turretsTypeOne = GameObject.FindGameObjectsWithTag("1");
         turretsTypeTwo = GameObject.FindGameObjectsWithTag("2");
         turretsTypeThree = GameObject.FindGameObjectsWithTag("3");
-        turretsTypeFour = GameObject.FindGameObjectsWithTag("4");
+        turretsTypeFour = GameObject.FindGameObjectsWithTag("4");   
     }
 
     public void killAllExisting()
@@ -44,13 +49,29 @@ public class Cheats : MonoBehaviour
         gold.plus(1000);
     }
 
-    public void invencibleBaseOn_Off()//nefunguje
+    public void remove1000Golds()
+    {
+        if (gold.golds < 1000)
+        {
+            int minus = 1000 - gold.golds;
+            if(minus > 0)
+            {
+                gold.minus(minus);
+            }
+        }
+        else
+        {
+            gold.minus(1000);
+        }
+    }
+
+    public void invencibleBaseOn_Off()
     {
         baseNotDie = !baseNotDie;
         if (baseNotDie)
         {
             StartCoroutine(invencibleBase());
-            Debug.Log("cant die");
+            Debug.Log("cant die - " + baseNotDie);
         }
     }
 
@@ -59,29 +80,30 @@ public class Cheats : MonoBehaviour
         while (baseNotDie)
         {
             yield return new WaitForSeconds(1);
-            if(hp.GetComponent<BaseHP>().currentHP<= 1000)
-            {
-                hp.GetComponent<BaseHP>().setHP(1000);
-            }
+            hp.setHP(1000);
+            Debug.Log("setting hp to 1000");
         }
     }
 
-    public void turretDMGPlus100Percent()//nefunguje
+    public void turretDMGPlus100Percent()
     {
-        giveMoreDMG(0);
-        giveMoreDMG(1);
-        giveMoreDMG(2);
-        giveMoreDMG(3);
+        giveMoreDMG(turretsTypeOne);
+        giveMoreDMG(turretsTypeTwo);
+        giveMoreDMG(turretsTypeThree);
+        giveMoreDMG(turretsTypeFour);
     }
 
-    private void giveMoreDMG(int arrayNumber)
+    private void giveMoreDMG(GameObject[] turrets)
     {
-        GameObject[][] arrays = {turretsTypeOne, turretsTypeTwo, turretsTypeThree, turretsTypeFour};
-        
-            foreach(var turret in arrays[arrayNumber])
-            {
-                turret.GetComponent<Turret>().multi = 100;
-            }
-        
+        foreach(var turret in turrets)
+        {
+            Debug.Log(turret.gameObject.name);
+            turret.gameObject.transform.GetChild(0).gameObject.GetComponent<Turret>().multi = 100;
+        }
+    }
+
+    public void instantWin()
+    {
+        manager.gameWon();
     }
 }

@@ -112,6 +112,7 @@ public class ObjectClickSpawn : MonoBehaviour
         {
             place(objects[choice - 1]);
             mainCan.gameObject.GetComponent<Golds>().minus(price[choice-1]);
+            Debug.Log(objects[choice-1].gameObject.transform.GetChild(0).gameObject.name);
         }
         game.gameObject.GetComponent<CanvasOnPlace>().invisible();
         choice = 0;

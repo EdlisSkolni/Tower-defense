@@ -23,6 +23,7 @@ TagManager:
   - Bullet
   - Can menu
   - CheatStart
+  - Base
   layers:
   - Default
   - TransparentFX
