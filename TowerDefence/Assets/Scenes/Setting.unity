@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -286,7 +287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -320.8, y: -210}
+  m_AnchoredPosition: {x: -305.1, y: -204.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &116850587
@@ -433,7 +434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -503,6 +504,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc0042bb05be344883a2909c6e55da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cheats: 0
+  menuButton: {fileID: 0}
+  gameButton: {fileID: 0}
+  quitButton: {fileID: 0}
+  secretButton: {fileID: 0}
+  wonText: {fileID: 0}
+  playingText: {fileID: 0}
+  secretText: {fileID: 0}
 --- !u!114 &118375355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,10 +665,10 @@ MonoBehaviour:
   background: {fileID: 8300000, guid: 29767fba5ee31fd4093ccb9a12f33510, type: 3}
   hitFromNormalAndDMG: {fileID: 0}
   hitFromFreeze: {fileID: 0}
-  hitFromSplash: {fileID: 0}
   boom: {fileID: 0}
   enemyDed: {fileID: 0}
   enemyHitStructures: {fileID: 0}
+  turretHit: {fileID: 0}
 --- !u!4 &373025022
 Transform:
   m_ObjectHideFlags: 0
@@ -1582,7 +1591,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -318, y: 218}
+  m_AnchoredPosition: {x: -292.8, y: 208.9}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1366427651
