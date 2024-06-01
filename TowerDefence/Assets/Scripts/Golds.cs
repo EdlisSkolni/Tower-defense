@@ -14,6 +14,7 @@ public class Golds : MonoBehaviour
     void Start()
     {
         goldShow = GameObject.FindWithTag("Gold").GetComponent<TMP_Text>();
+        InvokeRepeating("goldsPlus", 0f, 0.1f);
     }
 
     // Update is called once per frame
@@ -22,7 +23,6 @@ public class Golds : MonoBehaviour
         goldsIncome = GameObject.FindWithTag("Spawn").GetComponent<WaveManager>().increaseGold;
         mineNum = GameObject.FindWithTag("MainMain").GetComponent<ObjectClickSpawn>().numMine;
         goldShow.text = "Golds: " + golds;
-        goldsPlus();
     }
 
     public void goldsPlus()

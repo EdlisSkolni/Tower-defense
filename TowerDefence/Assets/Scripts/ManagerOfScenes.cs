@@ -33,7 +33,6 @@ public class ManagerOfScenes : MonoBehaviour
             win = GameObject.FindWithTag("Spawn").GetComponent<WaveManager>().won;
             cheatsClass = GetComponent<Cheats>();
             cheatsClass.On_Off = cheats;
-            Debug.Log(cheats);
         }
         if(SceneManager.GetActiveScene().buildIndex == 0)
         {
