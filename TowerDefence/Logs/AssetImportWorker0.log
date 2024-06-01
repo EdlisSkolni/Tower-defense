@@ -575,3 +575,88 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 208.365659 seconds.
+  path: Assets/Prefabs/Tree.prefab
+  artifactKey: Guid(0626e0ea7cf6da24ca02821eeb8c0468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tree.prefab using Guid(0626e0ea7cf6da24ca02821eeb8c0468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab4a2b1560eb15bdc2b4bb86d9f5b288') in 0.263580 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 41.210711 seconds.
+  path: Assets/Prefabs/Barricade.prefab
+  artifactKey: Guid(7c24c1fd14c1a1d41abe0ec8409fd66d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Barricade.prefab using Guid(7c24c1fd14c1a1d41abe0ec8409fd66d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f9a1946ef5ae03a8d109832955a66e7') in 0.061857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 125
+========================================================================
+Received Import Request.
+  Time since last request: 0.271985 seconds.
+  path: Assets/Prefabs/radiusBoom.prefab
+  artifactKey: Guid(9620051cdff348e4a9d5d02be8b67cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/radiusBoom.prefab using Guid(9620051cdff348e4a9d5d02be8b67cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55acac7e867e5ee138d6c88d490dbc62') in 0.009457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Prefabs/Tower 2.prefab
+  artifactKey: Guid(d505529653cf6584bb2a3d03cc8ea185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower 2.prefab using Guid(d505529653cf6584bb2a3d03cc8ea185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a37d24e2cf4f5abc25b56b5b8d7a991f') in 0.015111 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 60
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Tower 3.prefab
+  artifactKey: Guid(cf64b939f9dbe584a95e7baab2221889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower 3.prefab using Guid(cf64b939f9dbe584a95e7baab2221889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72642572a4b746d140ef6a18c1cefc56') in 0.010321 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 59
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/testTurret 4.prefab
+  artifactKey: Guid(8b100a5df42af9641b6766bb21d95b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/testTurret 4.prefab using Guid(8b100a5df42af9641b6766bb21d95b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09bcc435c18f11ef1044dabd45ae3bcb') in 0.007056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Prefabs/testEnemy.prefab
+  artifactKey: Guid(ce70e4dc251b2a243a04bbd6dc10e014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/testEnemy.prefab using Guid(ce70e4dc251b2a243a04bbd6dc10e014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '139569d769bb24aef137fd8e5ab192c1') in 0.090244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Prefabs/Tower 4.prefab
+  artifactKey: Guid(ca9cdd1b827d6544799ad8fe0ca27563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower 4.prefab using Guid(ca9cdd1b827d6544799ad8fe0ca27563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '711c031d7b2926ed2165cd775b0f1797') in 0.012126 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 59
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Prefabs/test1.prefab
+  artifactKey: Guid(77457fbd490cec94e88b35f328057edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/test1.prefab using Guid(77457fbd490cec94e88b35f328057edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f72bde8ff81578d84b13ec937ef3b165') in 0.006615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Prefabs/testTurret 3.prefab
+  artifactKey: Guid(ccc51be95b215b24897fe3c01aa7034a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/testTurret 3.prefab using Guid(ccc51be95b215b24897fe3c01aa7034a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d48560dfd5e056882ae97b681f5cbbd') in 0.010314 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: Vstupnì-výstupní operace byla pøerušena buï z dùvodu ukonèení vlákna, nebo na žádost aplikace.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
