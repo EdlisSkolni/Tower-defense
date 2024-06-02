@@ -15,7 +15,6 @@ public class VomuleManager : MonoBehaviour
     public AudioClip boom;
     public AudioClip enemyDed;
     public AudioClip enemyHitStructures;
-    public AudioClip turretHit;
     public static VomuleManager instance;
 
     private void Awake()

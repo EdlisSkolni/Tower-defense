@@ -74,7 +74,6 @@ public class Turret : MonoBehaviour
         {
             bullet.Seek(target, type(), multi);
         }
-        volume.playEffect(volume.turretHit);
     }
 
     void updateTarget()

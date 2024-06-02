@@ -7171,12 +7171,11 @@ MonoBehaviour:
   musicSource: {fileID: 1803439811}
   effectsSource: {fileID: 1987864441}
   background: {fileID: 8300000, guid: 29767fba5ee31fd4093ccb9a12f33510, type: 3}
-  hitFromNormalAndDMG: {fileID: 0}
-  hitFromFreeze: {fileID: 0}
-  boom: {fileID: 0}
-  enemyDed: {fileID: 0}
-  enemyHitStructures: {fileID: 0}
-  turretHit: {fileID: 0}
+  hitFromNormalAndDMG: {fileID: 8300000, guid: 2217c48785e81c748b13f97c5d2ee3b9, type: 3}
+  hitFromFreeze: {fileID: 8300000, guid: 1925f4e4159cf244386986d368005cf6, type: 3}
+  boom: {fileID: 8300000, guid: fb9a27aac74c67c449e9e7a8e730eea0, type: 3}
+  enemyDed: {fileID: 8300000, guid: e699954fed99c3d4b911c9ecadff9a62, type: 3}
+  enemyHitStructures: {fileID: 8300000, guid: f32163f9d613dfa48b35c996b572e10c, type: 3}
 --- !u!4 &1360592601
 Transform:
   m_ObjectHideFlags: 0
