@@ -16,6 +16,8 @@ public class ManagerOfScenes : MonoBehaviour
     private bool secret = false;
     [HeaderAttribute("Public for other classes")]
     public bool cheats;
+    [HeaderAttribute("Camera movent show")]
+    public GameObject cameraMovement;
     [HeaderAttribute("Secret")]
     public Button menuButton;
     public Button gameButton;
@@ -25,6 +27,13 @@ public class ManagerOfScenes : MonoBehaviour
     public TMP_Text playingText;
     public GameObject secretText;
 
+    private void Start()
+    {
+        if(SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            StartCoroutine(showMovement());
+        }
+    }
 
     private void Update()
     {
@@ -57,6 +66,12 @@ public class ManagerOfScenes : MonoBehaviour
         {
             gameWon();
         }
+    }
+
+    public IEnumerator showMovement()
+    {
+        yield return new WaitForSeconds(5);
+        cameraMovement.gameObject.SetActive(false);
     }
 
 
