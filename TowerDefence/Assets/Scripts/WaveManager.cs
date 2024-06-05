@@ -12,14 +12,16 @@ public class WaveManager : MonoBehaviour
     private int[] numberOfEnemiesArray = new int[20];
     private int[] numberOfBossesArray = new int[20];
     private TMP_Text text;
-    private bool lastWave = false;
+    private bool waveKilled = false;
+    private bool lastWave;
 
     [HeaderAttribute("Public for other classes")]
     public bool increaseGold = false;
     public float numberOfEnemies;
     public GameObject[] enemiesNBossesRemaining;
     public bool won = false;
-
+    [HeaderAttribute("Finished wave screen")]
+    public GameObject screen;
     [HeaderAttribute("Enemies")]
     public GameObject enemy;
     public GameObject boss;
@@ -40,6 +42,7 @@ public class WaveManager : MonoBehaviour
         enemiesNBossesRemaining = GameObject.FindGameObjectsWithTag("Enemy");
         text.text = "Enemies Remaining: " + enemiesNBossesRemaining.Length;
         checkForLastWave();
+        finishedScreen();
     }
 
     private IEnumerator spawn()
@@ -76,6 +79,7 @@ public class WaveManager : MonoBehaviour
             if (enemiesNBossesRemaining.Length <= 0)
             {
                 but.gameObject.SetActive(true);
+                waveKilled = true; //<====waveEnd
                 increaseGold=false; //<================golds
                 break;
             }
@@ -130,6 +134,15 @@ public class WaveManager : MonoBehaviour
         else
         {
             lastWave = false;
+        }
+    }
+
+    public void finishedScreen()
+    {
+        if (waveKilled)
+        {
+            waveKilled = false;
+            screen.gameObject.SetActive(true);
         }
     }
 }

@@ -14,6 +14,9 @@ public class ManagerOfScenes : MonoBehaviour
     private Cheats cheatsClass;
     private bool win;
     private bool secret = false;
+    private bool fromGameToSetting = false;
+    [HeaderAttribute("Setting to Game button")]
+    public Button backGameButton;
     [HeaderAttribute("Public for other classes")]
     public bool cheats;
     [HeaderAttribute("Camera movent show")]
@@ -33,6 +36,15 @@ public class ManagerOfScenes : MonoBehaviour
         {
             StartCoroutine(showMovement());
         }
+        fromGameToSetting = Keeping.keepingBool2;
+        if (fromGameToSetting)
+        {
+            backGameButton.gameObject.SetActive(true);
+        }
+        else
+        {
+            backGameButton.gameObject.SetActive(false);
+        }
     }
 
     private void Update()
@@ -42,6 +54,7 @@ public class ManagerOfScenes : MonoBehaviour
             win = GameObject.FindWithTag("Spawn").GetComponent<WaveManager>().won;
             cheatsClass = GetComponent<Cheats>();
             cheatsClass.On_Off = cheats;
+            Keeping.keepingBool2 = true;
         }
         if(SceneManager.GetActiveScene().buildIndex == 0)
         {
@@ -70,8 +83,19 @@ public class ManagerOfScenes : MonoBehaviour
 
     public IEnumerator showMovement()
     {
-        yield return new WaitForSeconds(5);
-        cameraMovement.gameObject.SetActive(false);
+        yield return new WaitForSeconds(3);
+        RawImage image1 = cameraMovement.transform.GetChild(2).GetComponent<RawImage>();
+        RawImage image2 = cameraMovement.transform.GetChild(3).GetComponent<RawImage>();
+        TextMeshProUGUI text1 = cameraMovement.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI text2 = cameraMovement.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
+        for (int i = 10; i>= 0; i--)
+        {
+            yield return new WaitForSeconds(0.05f);
+            text1.color = new Color(text1.color.r, text1.color.g, text1.color.b, i / 10f);
+            text2.color = new Color(text2.color.r, text2.color.g, text2.color.b, i / 10f);
+            image1.color = new Color(image1.color.r, image1.color.g, image1.color.b, i / 10f);
+            image2.color = new Color(image2.color.r, image2.color.g, image2.color.b, i / 10f);
+        }
     }
 
 
@@ -116,6 +140,11 @@ public class ManagerOfScenes : MonoBehaviour
         Application.Quit();
     }
 
+    public void toGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+
     public void setSecret()
     {
         secret = !secret;
@@ -150,5 +179,14 @@ public class ManagerOfScenes : MonoBehaviour
         playingText.gameObject.SetActive(true);
         secretText.gameObject.transform.GetChild(0).gameObject.SetActive(false);
         secretText.gameObject.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+    }
+
+    public void hideFinishedWave()
+    {
+        GameObject finished = GameObject.FindGameObjectWithTag("Finished");
+        if (finished != null)
+        {
+            finished.SetActive(false);
+        }
     }
 }

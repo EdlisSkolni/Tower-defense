@@ -98,7 +98,6 @@ public class ObjectClickSpawn : MonoBehaviour
     public void start()
     {
         spawn.gameObject.GetComponent<WaveManager>().startWave(GameObject.FindWithTag("StartButton").GetComponent<Button>());
-        
     }
 
     public void placeTurret()

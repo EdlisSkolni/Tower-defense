@@ -24,6 +24,7 @@ TagManager:
   - Can menu
   - CheatStart
   - Base
+  - Finished
   layers:
   - Default
   - TransparentFX

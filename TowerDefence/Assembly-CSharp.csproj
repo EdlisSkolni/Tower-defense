@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\CanvasOnPlace.cs" />
     <Compile Include="Assets\Scripts\CameraControl.cs" />
     <Compile Include="Assets\Scripts\Volume.cs" />
+    <Compile Include="Assets\Scripts\Pause.cs" />
     <Compile Include="Assets\Scripts\BaseHP.cs" />
     <Compile Include="Assets\Scripts\Cheats.cs" />
   </ItemGroup>

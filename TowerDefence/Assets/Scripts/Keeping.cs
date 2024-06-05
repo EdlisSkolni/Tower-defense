@@ -5,4 +5,5 @@ using UnityEngine;
 public class Keeping : MonoBehaviour
 {
     public static bool keepingBool;
+    public static bool keepingBool2;
 }
