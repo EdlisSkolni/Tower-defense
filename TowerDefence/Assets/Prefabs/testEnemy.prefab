@@ -415,7 +415,7 @@ MonoBehaviour:
   target: {fileID: 0}
   slider: {fileID: 4132257871278213630}
   camera: {fileID: 0}
-  partical: {fileID: 0}
+  partical: {fileID: 6749658043103511462, guid: 11af670543664a744b791f7625cb5f65, type: 3}
   vomuleManager: {fileID: 0}
   damage: 5
   currentHP: 0
